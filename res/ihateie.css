@@ -15,8 +15,8 @@
 	position: relative;
 	z-index: 200;
 	color: InfoText;
-	background: InfoBackground  url(warning.gif) no-repeat 5px 3px;
-	padding: 5px 24px 5px 24px;
+	background: InfoBackground  url(warning.gif) no-repeat 5px 4px;
+	padding: 6px 24px 6px 24px;
 	border-bottom: 1px outset;
 }
 #iehatebar a#iehatebartext:hover {
@@ -28,7 +28,7 @@
 	z-index: 300;
 	right: 0;
 	top: 0;
-	margin: 5px 3px 0 0;
+	margin: 6px 3px 0 0;
 	width: 14px;
 	height: 14px;
 	background: transparent url(close.gif) no-repeat 3px 3px;
