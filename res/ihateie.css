@@ -1,0 +1,35 @@
+#iehatebar {
+	filter: progid:DXImageTransform.Microsoft.Blinds(direction='down', bands=1,duration=0.2);
+	position: relative;
+	z-index: 100;
+	font: message-box;
+	display: none;
+}
+#iehatebar a {
+	display: block;
+	cursor: hand;	/* Must be "hand" and not "pointer" for IE5.5 compability) */
+	text-align: left;
+	text-decoration: none;
+}
+#iehatebar a#iehatebartext {
+	position: relative;
+	z-index: 200;
+	color: InfoText;
+	background: InfoBackground  url(warning.gif) no-repeat 5px 3px;
+	padding: 5px 24px 5px 24px;
+	border-bottom: 1px outset;
+}
+#iehatebar a#iehatebartext:hover {
+	color: HighlightText;
+	background-color: Highlight;
+}
+#iehatebar a#iehatebarclose {
+	position: absolute;
+	z-index: 300;
+	right: 0;
+	top: 0;
+	margin: 5px 3px 0 0;
+	width: 14px;
+	height: 14px;
+	background: transparent url(close.gif) no-repeat 3px 3px;
+}
