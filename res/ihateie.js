@@ -26,12 +26,19 @@
 * Can be used to try persuading IE6 users to upgrade.
 * Customizable "Hate level", so you can decide which IE versions
 * should display the infobar.
+*
+* Tested in IE5.5, IE6, IE7 & IE8 with both Strict and Quirks mode
+*
+* Differences between this and a real infobar:
+* The real infobar attaches itself to a new viewport, making it 
+* appear at the top of the browser window until the user closes it.
+* The fake infobar is attached to the current viewport, so when you
+* scroll the page, the infobar scrolls too.
 ***************************************************************/
 
 function ihateie(options) {
 	// Versions of IE below or equal to this value, triggers the hatebar
 	var hatelevel = options.hatelevel || 6;
-//alert(options.hatelevel);
 
 	var resizehandler = function() {
 		var width = document.documentElement.clientWidth || document.body.clientWidth;
@@ -82,10 +89,10 @@ function ihateie(options) {
     	var iehatebar = document.createElement("div");
 		iehatebar.id ="iehatebar";
 		iehatebar.style.width = (document.documentElement.clientWidth || document.body.clientWidth);
-		iehatebar.style.marginTop = -parseInt(document.body.currentStyle.marginTop);
-		iehatebar.style.marginRight = -parseInt(document.body.currentStyle.marginRight);
-		iehatebar.style.marginBottom = parseInt(document.body.currentStyle.marginBottom);
-		iehatebar.style.marginLeft = -parseInt(document.body.currentStyle.marginLeft);
+		iehatebar.style.marginTop = -parseInt(document.body.currentStyle.marginTop)-parseInt(document.body.currentStyle.paddingTop);
+		iehatebar.style.marginRight = -parseInt(document.body.currentStyle.marginRight)-parseInt(document.body.currentStyle.paddingRight);
+		iehatebar.style.marginBottom = parseInt(document.body.currentStyle.marginBottom)+parseInt(document.body.currentStyle.paddingBottom);
+		iehatebar.style.marginLeft = -parseInt(document.body.currentStyle.marginLeft)-parseInt(document.body.currentStyle.paddingLeft);
 		document.body.insertBefore(iehatebar,document.body.firstChild);
 		
 		// Create A tag for the infotext in the bar
@@ -111,7 +118,7 @@ function ihateie(options) {
 		// Cleanup to prevent memory leaks
 		iehatebarclose.attachEvent('onunload',closebar);
 
-		// Just a quickie animation using IE filter transition.
+		// Simple animation using IE filter transition.
 		// Unfortunatly there's no filter for pushing down content.
 		iehatebar.filters.item(0).Apply();
 		iehatebar.style.display="block";

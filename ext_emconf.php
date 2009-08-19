@@ -13,8 +13,8 @@
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'PMK I hate IE',
 	'description' => 'Displays a fake IE "infobar" on Internet Explorer browsers (Similar to the annoying ActiveX infobar) with user defined text and link.
-Can be used to try persuading IE6 users to upgrade. Customizable "Hate level", so you can decide which IE versions should display the infobar. On non-IE browsers the script is not loaded.
-Written in Typoscript/Javascript. - No PHP. ;)',
+Could be used to try persuading IE6 users to upgrade. Customizable "Hate level", so you can decide which IE versions should display the infobar. On non-IE browsers the script is not loaded.
+Written in unobtrusive Javascript. - No PHP. ;)',
 	'category' => 'fe',
 	'author' => 'Peter Klein',
 	'author_email' => 'pmk@io.dk',
@@ -23,7 +23,7 @@ Written in Typoscript/Javascript. - No PHP. ;)',
 	'conflicts' => '',
 	'priority' => '',
 	'module' => '',
-	'state' => 'alpha',
+	'state' => 'beta',
 	'internal' => '',
 	'uploadfolder' => 0,
 	'createDirs' => '',
@@ -31,7 +31,7 @@ Written in Typoscript/Javascript. - No PHP. ;)',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '0.0.0',
+	'version' => '0.0.2',
 	'constraints' => array(
 		'depends' => array(
 		),
