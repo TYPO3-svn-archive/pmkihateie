@@ -66,21 +66,21 @@ function ihateie(options) {
 		if (bv<=6) {
 			// Really old crap
 			var msg = options.ie6text || "Your web browser is outdated! Click here for information on upgrading to a better browser."
-			var href = options.ie6link || "http://www.mozilla.com/firefox/";
+			var href = options.ie6link || "http://www.alternativebrowseralliance.com/browsers.html";
 			var title = options.ie6title || "Your web browser is outdated!"
 			var image = options.ie6icon || "typo3conf/ext/pmkihateie/res/warning.gif";
 		};
 		else if (bv==7) {
 			// Old crap
 			var msg = options.ie7text || "You are using an inferior browser. You should consider changing to a better browser, such as: Firefox, Safari, Opera or Chrome."
-			var href = options.ie7link || "http://www.mozilla.com/firefox/";
+			var href = options.ie7link || "http://www.alternativebrowseralliance.com/browsers.html";
 			var title = options.ie7title || "You are using an inferior browser."
 			var image = options.ie7icon || "typo3conf/ext/pmkihateie/res/warning.gif";
 		}
 		else if (bv>7) {
 			// New crap
 			var msg = options.ie8text || "You are using an inferior browser. You should consider changing to a better browser, such as: Firefox, Safari, Opera or Chrome."
-			var href = options.ie8link || "http://mashable.com/2009/07/16/ie6-must-die/";
+			var href = options.ie8link || "http://www.alternativebrowseralliance.com/browsers.html";
 			var title = options.ie8title || "You are using an inferior browser."
 			var image = options.ie8icon || "typo3conf/ext/pmkihateie/res/warning.gif";
 		}
@@ -108,7 +108,7 @@ function ihateie(options) {
 		// Create A tag for the closebutton in the bar
 		var iehatebarclose = document.createElement("a");
 		iehatebarclose.id ="iehatebarclose";
-		iehatebarclose.title = options.closetitle || "Click to close infobar";
+		iehatebarclose.title = options.closetitle || "Click here to close infobar";
 		iehatebarclose.attachEvent('onclick',closebar);
 		iehatebar.appendChild(iehatebarclose);
 		
