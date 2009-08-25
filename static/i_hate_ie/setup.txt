@@ -79,16 +79,8 @@ temp.pmkihateie {
 	140.wrap = closetitle:"|"
 }
 
-# adding the initialisation code using inlineJS
-# the inlineJS option was introduced in 4.2.0
-[browser = msie] && [system = win] && [compatVersion = 4.2.0]
-page.includeCSS.ihateie = EXT:pmkihateie/res/ihateie.css
-page.includeJS.ihateie = EXT:pmkihateie/res/ihateie.js
-page.inlineJS.2009 < temp.pmkihateie
-[global]
-
 # adding the initialisation code as headerData
-[browser = msie] && [system = win] && [compatVersion < 4.2.0]
+[browser = msie] && [system = win]
 page.includeCSS.ihateie = EXT:pmkihateie/res/ihateie.css
 page.includeJS.ihateie = EXT:pmkihateie/res/ihateie.js
 page.headerData.2009 < temp.pmkihateie
@@ -103,4 +95,11 @@ page.headerData.2009.stdWrap.wrap2 (
 			/*]]>*/
 		</script>
 )
+[global]
+
+# adding the initialisation code using inlineJS
+# the inlineJS option was introduced in 4.2.0
+[browser = msie] && [system = win] && [compatVersion = 4.2.0]
+page.inlineJS.2009 < temp.pmkihateie
+page.headerData.2009 >
 [global]
