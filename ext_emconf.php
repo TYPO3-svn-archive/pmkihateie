@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext: "pmkihateie"
 #
-# Auto generated 21-08-2009 09:27
+# Auto generated 12-09-2009 18:56
 #
 # Manual updates:
 # Only the data in the array - anything else is removed by next write.
@@ -17,7 +17,7 @@ Could be used to try persuading IE6 users to upgrade. Customizable "Hate level",
 Written in unobtrusive Javascript. - No PHP. ;)',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.1.2',
+	'version' => '0.1.3',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -42,7 +42,9 @@ Written in unobtrusive Javascript. - No PHP. ;)',
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:13:{s:9:"ChangeLog";s:4:"d0ad";s:10:"README.txt";s:4:"ee2d";s:12:"ext_icon.gif";s:4:"0580";s:14:"ext_tables.php";s:4:"29ea";s:14:"doc/manual.sxw";s:4:"b3e6";s:12:"res/bomb.gif";s:4:"3f72";s:13:"res/close.gif";s:4:"93e2";s:15:"res/ihateie.css";s:4:"8d4d";s:14:"res/ihateie.js";s:4:"b1c0";s:12:"res/noie.gif";s:4:"dbde";s:15:"res/warning.gif";s:4:"6706";s:30:"static/i_hate_ie/constants.txt";s:4:"d3f7";s:26:"static/i_hate_ie/setup.txt";s:4:"072e";}',
+	'_md5_values_when_last_written' => 'a:13:{s:9:"ChangeLog";s:4:"d0ad";s:10:"README.txt";s:4:"ee2d";s:12:"ext_icon.gif";s:4:"0580";s:14:"ext_tables.php";s:4:"29ea";s:14:"doc/manual.sxw";s:4:"a46e";s:12:"res/bomb.gif";s:4:"3f72";s:13:"res/close.gif";s:4:"93e2";s:15:"res/ihateie.css";s:4:"8d4d";s:14:"res/ihateie.js";s:4:"b1c0";s:12:"res/noie.gif";s:4:"dbde";s:15:"res/warning.gif";s:4:"6706";s:30:"static/i_hate_ie/constants.txt";s:4:"d3f7";s:26:"static/i_hate_ie/setup.txt";s:4:"5353";}',
+	'suggests' => array(
+	),
 );
 
 ?>
