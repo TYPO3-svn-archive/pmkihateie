@@ -1,6 +1,9 @@
 temp.pmkihateie = COA
 temp.pmkihateie {
-	wrap = window.attachEvent('onload',function() {ihateie({|})});
+	wrap (
+		if (0) {} // js minifcation workaround (jsmin)
+		window.attachEvent('onload',function() {ihateie({|})});
+	)
 	
 	10 = TEXT
 	10.value = {$plugin.tx_pmkihateie.hateLevel}
