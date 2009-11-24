@@ -61,7 +61,8 @@ function ihateie(options) {
 		
 	// Find IE Browser version
 	var bv = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]): 999;
-
+	bv = (document.documentMode && bv==7) ? 8 : bv; // documentMode is only supported in IE 8 so we know if its here its really IE 8
+ 
 	if (bv<=hatelevel) {
 		if (bv<=6) {
 			// Really old crap
