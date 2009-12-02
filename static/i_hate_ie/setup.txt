@@ -106,3 +106,12 @@ page.headerData.2009.stdWrap.wrap2 (
 page.inlineJS.2009 < temp.pmkihateie
 page.headerData.2009 >
 [global]
+
+# adding the initialisation code using jsInline
+# the inlineJS option was renamed to jsInline in 4.3.0
+[browser = msie] && [system = win] && [compatVersion = 4.3.0]
+page.jsInline.2009 < temp.pmkihateie
+page.inlineJS.2009 >
+page.headerData.2009 >
+[global]
+
